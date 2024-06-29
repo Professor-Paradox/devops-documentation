@@ -12,13 +12,12 @@
 ### 3. [Create Front End with Angular](./02_windows/02_create_angular_ui/index.md)
 
 # Application Deployment(Ubuntu)
-### 1. [Setup Mysql Database](./mysql/index.md)
-### 2. [Setup Java 8 in Ubuntu](./java/index.md)
-### 3. [Setup Nodejs in Ubuntu](./java/index.md)
-### 4. [Setup Nginx Webserver in Ubuntu](./java/index.md)
-### 4. [Manual Deployment of Application](./java/index.md)
-
+### 1. [Setup Mysql Database](./03_ubuntu/00_mysql/index.md)
+### 2. [Setup Java 8 in Ubuntu](./03_ubuntu/01_java/index.md)
+### 3. [Setup Nodejs in Ubuntu](./03_ubuntu/02_node/index.md)
+### 4. [Setup Nginx Webserver in Ubuntu](./03_ubuntu/03_nginx/index.md)
+### 5. [Manual Deployment of Application](./03_ubuntu/04_deploy/index.md)
 
 # Automatic Application Deployment(Jenkins)
-### 1. [Setup Jenkins in Ubuntu](./java/index.md)
-### 1. [Jenkins Pipeline To Build Angular App](./java/index.md)
+### 1. [Setup Jenkins in Ubuntu](./04_jenkins/00_install_jenkins/index.md)
+### 2. [Jenkins Pipeline To Build Angular App](./04_jenkins/01_setup_jenkins/index.md)
