@@ -6,8 +6,11 @@ sudo apt install openjdk-8-jdk -y
 # verify java version
 java -version
 ```
-![java-001](img/java-001.png)
-![java-002](img/java-002.png)
+![](img/java-001.png)
+<hr>
+
+![](img/java-002.png)
+<hr>
 
 
 ### Set JAVA_HOME Environment Variable
@@ -51,8 +54,11 @@ echo $JAVA_HOME
 echo $PATH
 ```
 
-![java-003](img/java-003.png)
-![java-004](img/java-004.png)
+![](img/java-003.png)
+<hr>
+
+![](img/java-004.png)
+<hr>
 
 
 ## We are done installing java and setting java_home paths, now we can work with java applications.
