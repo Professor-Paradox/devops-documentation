@@ -27,6 +27,7 @@
 
    ![](./img/azure-account-creation-05.png)
    <hr>
+   
    ![](./img/azure-account-creation-06.png)
    <hr>
    
@@ -43,6 +44,7 @@
 
    ![](./img/azure-account-creation-09.png)
    <hr>   
+   
    ![](./img/azure-account-creation-10.png)
    <hr>
 
@@ -50,6 +52,7 @@
 
    ![](./img/azure-account-creation-11.png)
    <hr>   
+   
    ![](./img/azure-account-creation-12.png)
    <hr>   
 
@@ -64,6 +67,7 @@
 ![](./img/azure-account-creation-15.png)
    <hr>
 
+10-1. **If online transactions are not enabled you will get this error**
 ![](./img/azure-account-creation-15-1.png)
    <hr>
  
@@ -72,6 +76,7 @@
 
    ![](./img/azure-account-creation-16.png)
    <hr>
+   
    ![](./img/azure-account-creation-17.png)
    <hr>
    
