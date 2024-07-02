@@ -59,8 +59,11 @@
    <hr>
    ![](./img/azure-account-creation-14.png)
    <hr>
-   ![](./img/azure-account-creation-15.png)
+     ![](./img/azure-account-creation-15.png)
    <hr>
+      ![](./img/azure-account-creation-15-1.png)
+   <hr>
+ 
 
 11.  **This will ask for otp on your registered mobile, make sure your card has online transactions enabled**
 
