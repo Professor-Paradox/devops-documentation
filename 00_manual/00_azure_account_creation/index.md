@@ -55,13 +55,16 @@
 
 10. **This will open card details page enter your Credit or Debit Card Details and Click Next**
 
-   ![](./img/azure-account-creation-13.png)
+![](./img/azure-account-creation-13.png)
    <hr>
-   ![](./img/azure-account-creation-14.png)
+
+![](./img/azure-account-creation-14.png)
    <hr>
-     ![](./img/azure-account-creation-15.png)
+
+![](./img/azure-account-creation-15.png)
    <hr>
-      ![](./img/azure-account-creation-15-1.png)
+
+![](./img/azure-account-creation-15-1.png)
    <hr>
  
 
