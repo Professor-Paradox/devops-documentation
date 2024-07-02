@@ -18,6 +18,6 @@
 ### 4. [Setup Nginx Webserver in Ubuntu](./03_ubuntu/03_nginx/index.md)
 ### 5. [Manual Deployment of Application](./03_ubuntu/04_deploy/index.md)
 
-# Automatic Application Deployment(Jenkins)
-### 1. [Setup Jenkins in Ubuntu](./04_jenkins/00_install_jenkins/index.md)
-### 2. [Jenkins Pipeline To Build Angular App](./04_jenkins/01_setup_jenkins/index.md)
+# Additional Tools
+### 1. [Setup Jenkins in Ubuntu](./04_tools/00_install_jenkins/index.md)
+### 2. [Setup Docker in Ubutnu](./04_tools/01_install_docker/index.md)
