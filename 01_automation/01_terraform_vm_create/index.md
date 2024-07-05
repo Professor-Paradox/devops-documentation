@@ -110,12 +110,12 @@ resource "azurerm_public_ip" "devops-vm-ip" {
   allocation_method   = "Static"
 }
 
-resource "azurerm_public_ip" "jenkins-vm-ip" {
-  name                = "jenkins-vm-ip"
-  resource_group_name = azurerm_resource_group.example-rg.name
-  location            = azurerm_resource_group.example-rg.location
-  allocation_method   = "Static"
-}
+#resource "azurerm_public_ip" "jenkins-vm-ip" {
+#  name                = "jenkins-vm-ip"
+#  resource_group_name = azurerm_resource_group.example-rg.name
+#  location            = azurerm_resource_group.example-rg.location
+#  allocation_method   = "Static"
+#}
 
 # Create NICs for two vms and attach above public ip to each
 resource "azurerm_network_interface" "devops-vm-nic" {
@@ -131,18 +131,18 @@ resource "azurerm_network_interface" "devops-vm-nic" {
   }
 }
 
-resource "azurerm_network_interface" "jenkins-vm-nic" {
-  name                = "jenkins-vm-nic"
-  location            = azurerm_resource_group.example-rg.location
-  resource_group_name = azurerm_resource_group.example-rg.name
-
-  ip_configuration {
-    name                          = "internal"
-    private_ip_address_allocation = "Dynamic"
-    subnet_id                     = azurerm_subnet.example-subnet.id
-    public_ip_address_id          = azurerm_public_ip.jenkins-vm-ip.id
-  }
-}
+#resource "azurerm_network_interface" "jenkins-vm-nic" {
+#  name                = "jenkins-vm-nic"
+#  location            = azurerm_resource_group.example-rg.location
+#  resource_group_name = azurerm_resource_group.example-rg.name
+#
+#  ip_configuration {
+#    name                          = "internal"
+#    private_ip_address_allocation = "Dynamic"
+#    subnet_id                     = azurerm_subnet.example-subnet.id
+#    public_ip_address_id          = azurerm_public_ip.jenkins-vm-ip.id
+#  }
+#}
 
 # Create 2 VMs
 resource "azurerm_linux_virtual_machine" "devops-vm" {
@@ -169,34 +169,34 @@ resource "azurerm_linux_virtual_machine" "devops-vm" {
   }
 }
 
-resource "azurerm_linux_virtual_machine" "jenkins-vm" {
-  resource_group_name   = azurerm_resource_group.example-rg.name
-  location              = azurerm_resource_group.example-rg.location
-  network_interface_ids = [azurerm_network_interface.jenkins-vm-nic.id]
-
-  name                            = "jenkins-vm"
-  size                            = "Standard_B1s"
-  admin_username                  = "ubuntu"
-  admin_password                  = "Vmpassword@123"
-  disable_password_authentication = false
-
-  os_disk {
-    caching              = "ReadWrite"
-    storage_account_type = "Standard_LRS"
-  }
-
-  source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-jammy"
-    sku       = "22_04-lts"
-    version   = "latest"
-  }
-}
+#resource "azurerm_linux_virtual_machine" "jenkins-vm" {
+#  resource_group_name   = azurerm_resource_group.example-rg.name
+#  location              = azurerm_resource_group.example-rg.location
+#  network_interface_ids = [azurerm_network_interface.jenkins-vm-nic.id]
+#
+#  name                            = "jenkins-vm"
+#  size                            = "Standard_B1s"
+#  admin_username                  = "ubuntu"
+#  admin_password                  = "Vmpassword@123"
+#  disable_password_authentication = false
+#
+#  os_disk {
+#    caching              = "ReadWrite"
+#    storage_account_type = "Standard_LRS"
+#  }
+#
+#  source_image_reference {
+#    publisher = "Canonical"
+#    offer     = "0001-com-ubuntu-server-jammy"
+#    sku       = "22_04-lts"
+#    version   = "latest"
+#  }
+#}
 
 output "vm_summary" {
   value = {
-    "devops-vm-ip"  = azurerm_linux_virtual_machine.devops-vm.public_ip_address,
-    "jenkins-vm-ip" = azurerm_linux_virtual_machine.jenkins-vm.public_ip_address
+    "devops-vm-ip"  = azurerm_linux_virtual_machine.devops-vm.public_ip_address
+   # "jenkins-vm-ip" = azurerm_linux_virtual_machine.jenkins-vm.public_ip_address
   }
   description = "Summary of VM names, there Public IP addresses"
 }
